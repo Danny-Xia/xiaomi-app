@@ -1,0 +1,12 @@
+{
+  "component": true,
+  "usingComponents": {
+    "intelligence": "/components/home/intelligence",
+    "phone": "/components/home/phone",
+    "recommend": "/components/home/recommend",
+    "tv": "/components/home/tv",
+    "note-book": "/components/home/notebook",
+    "hea": "/components/home/hea",
+    "lefe": "/components/home/lefe"
+  }
+}

@@ -1,0 +1,60 @@
+.recommend-intelligence {
+	font-size: 0.28rem;
+	background-color: #fff;
+	.fill {
+		height: 460rpx;
+		width: 100%;
+		.image {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.main {
+		margin-top: 5rpx;
+		// border: 1px solid red;
+		.list-item {
+			width: 100%;
+			height: 50vw;
+			display: flex;
+			.img-box {
+				width: 50vw;
+				height: 100%;
+				.image {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.text-des {
+				width: 50vw;
+				padding: 72rpx 0 0 34rpx;
+				box-sizing: border-box;
+				.name {
+					color: rgba(0,0,0,.87);
+					font-size: 30rpx;
+				}
+				.des {
+					color: rgba(0,0,0,.54);
+				}
+				.price {
+					margin-top: 36rpx;
+					font-size: 30rpx;
+					color: #ea625b;
+					.old-price {
+						font-size: 0.28rem;
+						margin-left: 10rpx;
+						color: rgba(0,0,0,.54);
+						text-decoration: line-through;
+					}
+				}
+			}
+		}
+	}
+	.more {
+		text-align: center;
+		height: 120rpx;
+		line-height: 120rpx;
+		border-top: 1rpx solid #ddd;
+		font-size: 30rpx;
+		color: rgba(0,0,0,.6);
+	}
+}

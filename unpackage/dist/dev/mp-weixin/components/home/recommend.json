@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "m-swiper": "/components/home/swiper",
+    "cells-auto-fill": "/components/home/cells_auto_fill",
+    "advert": "/components/home/advert",
+    "recommend-public": "/components/home/recommend_public",
+    "recommend-intelligence": "/components/home/recommend_intelligence"
+  }
+}

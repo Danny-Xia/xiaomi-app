@@ -1,0 +1,1 @@
+<view class="cells-auto-fill"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id"><view class="cells-item"><image class="image" src="{{item.imgSrc}}" mode></image></view></block></view>

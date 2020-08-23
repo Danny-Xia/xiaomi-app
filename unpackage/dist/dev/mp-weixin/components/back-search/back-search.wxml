@@ -1,0 +1,1 @@
+<view class="back-search"><image class="image" src="../../static/icons/xiangzuo.png" mode data-event-opts="{{[['tap',[['pageTo',['back']]]]]}}" bindtap="__e"></image><text>购物车</text><image class="image icon-search" src="../../static/icons/search.png" mode data-event-opts="{{[['tap',[['pageTo',['search']]]]]}}" bindtap="__e"></image></view>

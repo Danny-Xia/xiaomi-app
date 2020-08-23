@@ -1,0 +1,162 @@
+.user {
+	font-size: 30rpx;
+	background-color: #f5f5f5;
+	.header {
+		width: 100%;
+		height: 166rpx;
+		background: url('http://m.mi.com/static/img/bg.63c8e19851.png') #f37d0f;
+		background-size: 100% 100%;
+		display: flex;
+		align-items: center;
+		.header-content {
+			padding-left: 26rpx;
+			.icon-avatar {
+				display: inline-block;
+				width: 100rpx;
+				height: 100rpx;
+				border-radius: 50%;
+				background-image: url('../../static/icons/user_avatar.png');
+				background-size: 100% 100%;
+				vertical-align: middle;
+			}
+			.login-text {
+				vertical-align: middle;
+				color: #fff;
+				margin-left: 16rpx;
+			}
+		}
+	}
+	.order {
+		height: 82rpx;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 30rpx;
+		border-bottom: 1rpx solid #ddd;
+		background-color: #fff;
+		.all-order {
+			.my-order-text {
+				vertical-align: middle;
+			}
+			.icon-xiangyou {
+				display: inline-block;
+				margin-left: 15rpx;
+				width: 30rpx;
+				height: 30rpx;
+				background-size: 100% 100%;
+				vertical-align: middle;
+				background-image: url('../../static/icons/xiangyou.png');
+			}
+		}
+	}
+	.my-order-icons {
+		height: 178rpx;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #fff;
+		.view {
+			height: 114rpx;
+			width: 100rpx;
+			text-align: center;
+			.image {
+				width: 46rpx;
+				height: 44rpx;
+			}
+		}
+	}
+	.list-item {
+		margin-top: 20rpx;
+		background-color: #fff;
+		.list-item-view {
+			height: 110rpx;
+			width: 100%;
+			line-height: 110rpx;
+			display: flex;
+			.icon-box {
+				width: 110rpx;
+				height: 110rpx;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding-left: 10rpx;
+				.icon {
+					width: 50rpx;
+					height: 50rpx;
+					background-size: 100% 100%;
+					&.icon-vip {
+						background-image: url('../../static/icons/user_vip.png')
+					}
+					&.icon-hui {
+						background-image: url('../../static/icons/user_quan.png');
+					}
+					&.icon-service {
+						background-image: url('../../static/icons/user_serve.png');
+					}
+					&.icon-mijia {
+						background-image: url('../../static/icons/user_mi_home.png');
+					}
+					&.icon-f {
+						background-image: url('../../static/icons/user_f.png');
+					}
+					&.icon-gift {
+						background-image: url('../../static/icons/user_gift.png');
+					}
+				}
+			}
+			.text {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding-right: 30rpx;
+				&.border {
+					border-bottom: 1rpx solid #ddd;
+				}
+				.icon-xiangyou {
+					width: 30rpx;
+					height: 30rpx;
+					background-image: url('../../static/icons/xiangyou.png');
+					background-size: 100% 100%;
+				}
+			}
+		}
+		
+	}
+	.setting {
+		width: 100%;
+		height: 110rpx;
+		background-color: #fff;
+		margin-top: 20rpx;
+		line-height: 110rpx;
+		display: flex;
+		.icon-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 110rpx;
+			padding-left: 10rpx;
+			.icon-setting {
+				width: 50rpx;
+				height: 50rpx;
+				display: inline-block;
+				background-size: 100% 100%;
+				background-image: url('../../static/icons/user_setting.png');
+			}
+		}
+		.text {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-right: 30rpx;
+			.icon-xiangyou {
+				width: 30rpx;
+				height: 30rpx;
+				display: inline-block;
+				background-size: 100% 100%;
+				background-image: url('../../static/icons/xiangyou.png');
+			}
+		}
+	}
+}
