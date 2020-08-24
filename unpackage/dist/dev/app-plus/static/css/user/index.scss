@@ -14,10 +14,12 @@
 				display: inline-block;
 				width: 100rpx;
 				height: 100rpx;
-				border-radius: 50%;
-				background-image: url('../../static/icons/user_avatar.png');
-				background-size: 100% 100%;
 				vertical-align: middle;
+				.image {
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+				}
 			}
 			.login-text {
 				vertical-align: middle;
@@ -156,6 +158,68 @@
 				display: inline-block;
 				background-size: 100% 100%;
 				background-image: url('../../static/icons/xiangyou.png');
+			}
+		}
+	}
+	.modal {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 9000;
+		background-color: rgba(0,0,0, .3);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.content {
+			background-color: #fff;
+			width: 680rpx;
+			height: 360rpx;
+			border-radius: 20rpx;
+			.content-top {
+				// border: 1px solid red;
+				border-bottom: 1rpx solid #ddd;
+				height: 254rpx;
+				box-sizing: border-box;
+				padding: 44rpx 65rpx 50rpx 65rpx;
+				font-size: 26rpx;
+				.row1 {
+					color: #ff6700;
+					margin-bottom: 10rpx;
+					.text {
+						margin-right: 10rpx;
+					}
+				}
+				.row2 {
+					color: #ff6700;
+					margin-bottom: 10rpx;
+					.text {
+						margin-right: 10rpx;
+					}
+				}
+				.content-text {
+					color: #676767;
+				}
+			}
+			.btns {
+				display: flex;
+				justify-content: space-between;
+				height: calc(100% - 254rpx);
+				.btn {
+					width: 50%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					&.disagree {
+						color: #676767;
+						border-right: 1rpx solid #ddd;
+					}
+					&.agree {
+						color: #ff6700;
+					}
+				}
 			}
 		}
 	}

@@ -2,8 +2,12 @@
 	<view class="user">
 		<view class="header">
 			<view class="header-content" @click="showModal">
-				<text class="icon-avatar"></text>
-				<text class="login-text">登录/注册</text>
+				<view class="icon-avatar">
+					<image v-if="!isLogin" class="image" src="../../static/icons/user_avatar.png" mode=""></image>
+					<image v-else class="image" src="../../static/images/user2_tou.jpg" mode=""></image>
+				</view>
+				<text class="login-text" v-if="!isLogin">登录/注册</text>
+				<text v-else class="login-text user-name">超级管理员</text>
 			</view>
 		</view>
 		<view class="order">
@@ -117,7 +121,7 @@
 			</view>
 			
 		</view>
-		<view class="modal" v-show="isShowModal">
+		<view class="modal" v-if="isShowModal">
 			<view class="content">
 				<view class="content-top">
 					<view class="row1">
@@ -152,19 +156,33 @@
 				isShowModal: false
 			}
 		},
+		computed: {
+			isLogin () {
+				console.log(this.$store.state.isLogin)
+				return this.$store.state.isLogin;
+			}
+		},
 		onHide () {
 			this.$store.commit('changeBackPage', 'pages/user/user');
+		},
+		onShow () {
+			uni.showTabBar();
 		},
 		methods: {
 			showModal () {
 				this.isShowModal = true;
+				uni.hideTabBar();
 			},
 			disAgree () {
 				this.isShowModal = false;
+				uni.showTabBar();
 			},
 			agree () {
 				uni.navigateTo({
 					url: `../../pages/login_register/login_register`,
+					success: () => {
+						this.isShowModal = false;
+					},
 					fail: err => {
 						console.log(err)
 					}

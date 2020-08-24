@@ -1,0 +1,183 @@
+.login_register {
+	.logo-area {
+		padding: 0 40rpx;
+		box-sizing: border-box;
+		.help {
+			width: 100%;
+			height: 40rpx;
+			text-align: right;
+			overflow: hidden;
+			padding-top: 24rpx;
+			.image {
+				width: 40rpx;
+				height: 40rpx;
+			}
+		}
+		.logo-img {
+			// border: 1px solid red;
+			text-align: center;
+			.image {
+				width: 90rpx;
+				height: 90rpx;
+			}
+		}
+		.login-text {
+			text-align: center;
+		}
+		
+	}
+	.login-inp-area {
+		// border: 1px solid red;
+		padding: 0 40rpx;
+		box-sizing: border-box;
+		margin-top: 60rpx;
+		.login-inp {
+			display: flex;
+			color: #9b9b9b;
+			border-bottom: 1px solid #ddd;
+			padding: 20rpx 0;
+			position: relative;
+			&.err {
+				border-bottom-color: #f66;
+			}
+			.label {
+				// border: 1px solid red;
+				height: 50rpx;
+				line-height: 50rpx;
+				
+			}
+			.input {
+				border: none;
+				outline: none;
+				width: 70%;
+				height: 50rpx;
+				line-height: 50rpx;
+				color: #000;
+			}
+			.login-inp-btn {
+				position: absolute;
+				width: 50rpx;
+				height: 50rpx;
+				right: 0;
+			}
+		}
+		.error-des {
+			.icon-warn {
+				vertical-align: middle;
+				margin-right: 20rpx;
+			}
+			.text {
+				vertical-align: middle;
+				color: #f66;
+			}
+		}
+		.btns {
+			// border: 1px solid red;
+			.btn {
+				width: 100%;
+				height: 94rpx;
+				text-align: center;
+				line-height: 94rpx;
+				
+				font-weight: bold;
+				&.register-btn {
+					margin: 44rpx 0;
+				}
+				.view {
+					
+					color: #7b7b7b;
+					border-radius: 50rpx;
+					background-color: #f0f0f0;
+					&.active {
+						background-color: #ff6700;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.yzm {
+			// border: 1px solid red;
+			text-align: center;
+			margin-top: 30rpx;
+			color: #9b9b9b;
+			.gun {
+				margin: 0 20rpx;
+				color: #000;
+			}
+		}
+	}
+	.other {
+		// border: 1px solid red;
+		margin-top: 90rpx;
+		text-align: center;
+		font-size: 22rpx;
+		color: #9b9b9b;
+		.other-text {
+			&::before, &::after {
+				content: '';
+				display: inline-block;
+				width: 252rpx;
+				height: 2rpx;
+				background-color: #ccc;
+				vertical-align: middle;
+			}
+			&::before {
+				margin-right: 5rpx;
+			}
+			&::after {
+				margin-left: 5rpx;
+			}
+		}
+		.other-items {
+			display: flex;
+			justify-content: center;
+			padding-top: 20rpx;
+			.other-item {
+				width: 55rpx;
+				height: 55rpx;
+				border-radius: 50%;
+				margin: 20rpx;
+				background-repeat: no-repeat;
+				background-size: 70% 70%;
+				background-position: center center;
+				&.weibo {
+					background-color: #ed9090;
+					background-image: url('../../static/images/weibo.png');
+				}
+				&.zhifubao {
+					background-color: #6bb6ea;
+					background-image: url('../../static/images/zhifubao.png');
+					background-size: 80% 80%;
+				}
+				&.weixin {
+					background-color: #00be00;
+					background-image: url('../../static/images/weixin.png');
+				}
+				&.pingguo {
+					background-color: #000;
+					background-image: url('../../static/images/pingguo.png');
+				}
+			}
+		}
+	}
+	.footer {
+		// border: 1px solid red;
+		display: flex;
+		margin-top: 100rpx;
+		display: flex;
+		justify-content: space-around;
+		color: #9b9b9b;
+		.nav-item {
+			&:first-of-type {
+				color: #000;
+			}
+			&::after {
+				content: '|';
+				margin-left: 20rpx;
+			}
+			&:last-of-type::after {
+				content: ''
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+.recommend {
+	background-color: #f6f6f6;
+	.new-people {
+		width: 100%;
+		height: 308rpx;
+		display: flex;
+		justify-content: space-around;
+		padding-top: 10rpx;
+		box-sizing: border-box;
+		// border: 1px solid red;
+		
+		.view {
+			height: 261rpx;
+			// border: 1px solid red;
+			&.gift {
+				width: 245rpx;
+				height: 100%;
+				.image {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			&.new-people-vip {
+				width: 496rpx;
+				height: 100%;
+				display: flex;
+				.image {
+					width: 50%;
+					height: 100%;
+				}
+			}
+		}
+	}
+	.publicity-map {
+		height: 531rpx;
+		width: 100%;
+		// border: 1px solid red;
+		display: flex;
+		justify-content: space-between;
+		.view {
+			width: 49.5%;
+			height: 100%;
+			.image {
+				width: 100%;
+				height: 100%;
+			}
+			&.right-col {
+				font-size: 0;
+				.image {
+					height: 49.5%;
+					&:first-of-type {
+						margin-bottom: 1%;
+					}
+				}
+			}
+		}
+	}
+	.photos {
+		margin-top: 20rpx;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.image {
+			width: 370rpx;
+			height: 498rpx;
+			margin-bottom: 5rpx;
+		}
+	}
+	.understand-xiaomi {
+		width: 100%;
+		height: 110rpx;
+		.image {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

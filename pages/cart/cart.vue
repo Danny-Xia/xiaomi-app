@@ -1,7 +1,7 @@
 <template>
 	<view class="cart">
 		<back-search />
-		<view class="go-login">
+		<view class="go-login" v-if="!isLogin" @click="toLogin">
 			<text>登陆后享受更多优惠</text>
 			<text class="login-text">
 				去登陆
@@ -192,7 +192,19 @@
 			this.$store.commit('changeBackPage', 'pages/cart/cart');
 		},
 		methods: {
-			
+			toLogin () {
+				uni.navigateTo({
+					url: '../../pages/login_register/login_register',
+					fail: err => {
+						console.log(err)
+					}
+				})
+			}
+		},
+		computed: {
+			isLogin () {
+				return this.$store.state.isLogin;
+			}
 		}
 	}
 </script>

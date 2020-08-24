@@ -1,0 +1,14 @@
+.cells-auto-fill {
+	display: flex;
+	height: 314rpx;
+	width: 100%;
+	background-color: #fff;
+	justify-content: space-around;
+	align-item: center;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	.image {
+		width: 150rpx;
+		height: 156rpx;
+	}
+}

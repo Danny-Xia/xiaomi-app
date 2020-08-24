@@ -94,7 +94,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   backSearch: function() {
-    return __webpack_require__.e(/*! import() | components/back-search/back-search */ "components/back-search/back-search").then(__webpack_require__.bind(null, /*! @/components/back-search/back-search.vue */ 70))
+    return __webpack_require__.e(/*! import() | components/back-search/back-search */ "components/back-search/back-search").then(__webpack_require__.bind(null, /*! @/components/back-search/back-search.vue */ 78))
   }
 }
 var render = function() {
@@ -134,7 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var BackSearch = function BackSearch() {__webpack_require__.e(/*! require.ensure | components/back-search/back-search */ "components/back-search/back-search").then((function () {return resolve(__webpack_require__(/*! ../../components/back-search/back-search.vue */ 70));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var rightSquare = function rightSquare() {__webpack_require__.e(/*! require.ensure | components/classify/right-square */ "components/classify/right-square").then((function () {return resolve(__webpack_require__(/*! ../../components/classify/right-square.vue */ 77));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var BackSearch = function BackSearch() {__webpack_require__.e(/*! require.ensure | components/back-search/back-search */ "components/back-search/back-search").then((function () {return resolve(__webpack_require__(/*! ../../components/back-search/back-search.vue */ 78));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var rightSquare = function rightSquare() {__webpack_require__.e(/*! require.ensure | components/classify/right-square */ "components/classify/right-square").then((function () {return resolve(__webpack_require__(/*! ../../components/classify/right-square.vue */ 85));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 
 

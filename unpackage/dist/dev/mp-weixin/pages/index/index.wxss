@@ -206,4 +206,7 @@
 .home .main {
   margin-top: 140rpx;
 }
+.home .main.allready-login {
+  margin-top: 140rpx;
+}
 

@@ -277,6 +277,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -284,19 +288,33 @@ var _default =
       isShowModal: false };
 
   },
+  computed: {
+    isLogin: function isLogin() {
+      console.log(this.$store.state.isLogin);
+      return this.$store.state.isLogin;
+    } },
+
   onHide: function onHide() {
     this.$store.commit('changeBackPage', 'pages/user/user');
+  },
+  onShow: function onShow() {
+    uni.showTabBar();
   },
   methods: {
     showModal: function showModal() {
       this.isShowModal = true;
+      uni.hideTabBar();
     },
     disAgree: function disAgree() {
       this.isShowModal = false;
+      uni.showTabBar();
     },
-    agree: function agree() {
+    agree: function agree() {var _this = this;
       uni.navigateTo({
         url: "../../pages/login_register/login_register",
+        success: function success() {
+          _this.isShowModal = false;
+        },
         fail: function fail(err) {
           console.log(err);
         } });

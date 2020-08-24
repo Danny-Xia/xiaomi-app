@@ -94,7 +94,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   backSearch: function() {
-    return __webpack_require__.e(/*! import() | components/back-search/back-search */ "components/back-search/back-search").then(__webpack_require__.bind(null, /*! @/components/back-search/back-search.vue */ 70))
+    return __webpack_require__.e(/*! import() | components/back-search/back-search */ "components/back-search/back-search").then(__webpack_require__.bind(null, /*! @/components/back-search/back-search.vue */ 78))
   }
 }
 var render = function() {
@@ -134,7 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var BackSearch = function BackSearch() {__webpack_require__.e(/*! require.ensure | components/back-search/back-search */ "components/back-search/back-search").then((function () {return resolve(__webpack_require__(/*! ../../components/back-search/back-search.vue */ 70));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var BackSearch = function BackSearch() {__webpack_require__.e(/*! require.ensure | components/back-search/back-search */ "components/back-search/back-search").then((function () {return resolve(__webpack_require__(/*! ../../components/back-search/back-search.vue */ 78));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -327,7 +327,21 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   onHide: function onHide() {
     this.$store.commit('changeBackPage', 'pages/cart/cart');
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    toLogin: function toLogin() {
+      uni.navigateTo({
+        url: '../../pages/login_register/login_register',
+        fail: function fail(err) {
+          console.log(err);
+        } });
+
+    } },
+
+  computed: {
+    isLogin: function isLogin() {
+      return this.$store.state.isLogin;
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

@@ -10,6 +10,9 @@ const store = new Vuex.Store({
 		homeNavScrollLeft: 0 //首页nav滚动条位置
 	},
     mutations: {
+		changeIsLogin (state, isLogin) {
+			state.isLogin = isLogin;
+		},
 		changeHomeCurItem (state, index) {
 			state.homeCurItem = index;
 		},

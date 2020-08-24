@@ -31,7 +31,7 @@
 			</view>
 		</view>
 		<!-- 主要内容区 -->
-		<view class="main">
+		<view class="main" :class="{'allready-login': $store.state.isLogin}">
 			<home-main />
 		</view>
 	</view>

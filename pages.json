@@ -2,37 +2,37 @@
 	"pages": [{
 		"path": "pages/index/index",
 		"style": {
-			"navigationBarTitleText": "小米商城"
+			"navigationBarTitleText": "danny的小屋"
 		}
 	},{
 		"path": "pages/classify/classify",
 		"style": {
-			"navigationBarTitleText": "小米商城"
+			"navigationBarTitleText": "danny的小屋"
 		}
 	},{
 		"path": "pages/star/star",
 		"style": {
-			"navigationBarTitleText": "小米商城"
+			"navigationBarTitleText": "danny的小屋"
 		}
 	},{
 		"path": "pages/cart/cart",
 		"style": {
-			"navigationBarTitleText": "小米商城"
+			"navigationBarTitleText": "danny的小屋"
 		}
 	},{
 		"path": "pages/user/user",
 		"style": {
-			"navigationBarTitleText": "小米商城"
+			"navigationBarTitleText": "danny的小屋"
 		}
 	},{
 		"path": "pages/search/search",
 		"style": {
-			"navigationBarTitleText": "小米商城"
+			"navigationBarTitleText": "danny的小屋"
 		}
 	},{
 		"path": "pages/login_register/login_register",
 		"style": {
-			"navigationBarTitleText": "小米商城"
+			"navigationBarTitleText": "danny的小屋"
 		}
 	}],
 	"globalStyle": {

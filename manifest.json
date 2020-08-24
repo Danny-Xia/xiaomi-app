@@ -37,7 +37,14 @@
                 ]
             },
             "ios" : {},
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "ad" : {}
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "C:/Users/asddc/Pictures/erha.png"
+                }
+            }
         }
     },
     "quickapp" : {},
