@@ -6,7 +6,8 @@
     "pages/cart/cart",
     "pages/user/user",
     "pages/search/search",
-    "pages/login_register/login_register"
+    "pages/login_register/login_register",
+    "pages/setting/setting"
   ],
   "subPackages": [],
   "window": {
@@ -53,5 +54,5 @@
     ]
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap16.json"
+  "sitemapLocation": "sitemap49.json"
 }

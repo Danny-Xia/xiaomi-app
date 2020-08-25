@@ -111,7 +111,7 @@
 				<text class="icon icon-setting"></text>
 			</view>
 		</view>
-		<view class="setting">
+		<view class="setting" @click="pageToSetting">
 			<view class="icon-box">
 				<text class="icon-setting"></text>
 			</view>
@@ -158,7 +158,6 @@
 		},
 		computed: {
 			isLogin () {
-				console.log(this.$store.state.isLogin)
 				return this.$store.state.isLogin;
 			}
 		},
@@ -186,6 +185,11 @@
 					fail: err => {
 						console.log(err)
 					}
+				})
+			},
+			pageToSetting () {
+				uni.navigateTo({
+					url: '../../pages/setting/setting'
 				})
 			}
 		}

@@ -138,7 +138,6 @@
 				}
 			},
 			register () {
-				console.log('注册');
 				const result = this.check();
 				if(result === 'ok') {
 					// 发送请求进行注册
@@ -155,7 +154,6 @@
 				}
 			},
 			login () {
-				console.log('登录');
 				const result = this.check();
 				if(result === 'ok') {
 					// 发送请求进行登录
@@ -199,7 +197,7 @@
 			sendRequest (url, obj) {
 				let isLogin = uni.getStorageSync('userAllreadyLogin');
 				if(isLogin) {
-					this.$store.commit('changeIsLogin', 'true');
+					this.$store.commit('changeIsLogin', true);
 					uni.switchTab({
 						url: '../../pages/user/user',
 						fail: err => {

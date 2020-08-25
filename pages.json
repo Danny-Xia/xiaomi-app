@@ -34,6 +34,11 @@
 		"style": {
 			"navigationBarTitleText": "danny的小屋"
 		}
+	},{
+		"path": "pages/setting/setting",
+		"style": {
+			"navigationBarTitleText": "danny的小屋"
+		}
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

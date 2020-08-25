@@ -270,7 +270,6 @@ var _default =
       }
     },
     register: function register() {
-      console.log('注册');
       var result = this.check();
       if (result === 'ok') {
         // 发送请求进行注册
@@ -287,7 +286,6 @@ var _default =
       }
     },
     login: function login() {
-      console.log('登录');
       var result = this.check();
       if (result === 'ok') {
         // 发送请求进行登录
@@ -304,6 +302,7 @@ var _default =
     clearErr: function clearErr() {
       this.errorMsg = '';
       this.errClass = '';
+      this.errClass = '';
     },
     lookPwd: function lookPwd() {
       if (this.pwdType === 'password') {
@@ -317,9 +316,11 @@ var _default =
     check: function check() {
       if (this.account.trim() === '') {
         this.errorMsg = '账号不能为空';
+        this.errClass = 'account';
         return;
       } else if (this.password.trim() === '') {
         this.errorMsg = '密码不能为空';
+        this.errClass = 'password';
         return;
       }
 
@@ -328,7 +329,7 @@ var _default =
     sendRequest: function sendRequest(url, obj) {var _this = this;
       var isLogin = uni.getStorageSync('userAllreadyLogin');
       if (isLogin) {
-        this.$store.commit('changeIsLogin', 'true');
+        this.$store.commit('changeIsLogin', true);
         uni.switchTab({
           url: '../../pages/user/user',
           fail: function fail(err) {

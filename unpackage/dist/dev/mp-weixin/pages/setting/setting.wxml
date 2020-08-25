@@ -1,0 +1,1 @@
+<view class="setting"><view data-event-opts="{{[['tap',[['exitLogin',['$event']]]]]}}" class="exit-login" bindtap="__e">退出登录</view></view>

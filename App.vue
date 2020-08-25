@@ -1,7 +1,10 @@
 <script>
 export default {
 	onLaunch: function() {
-		// console.log('App Launch');
+		const isLogin = uni.getStorageSync('userAllreadyLogin');
+		if(isLogin === 'true') {
+			this.$store.commit('changeIsLogin', true);
+		}
 	},
 	onShow: function() {
 		// console.log('App Show');

@@ -20,7 +20,9 @@
 				<view class="redmi-phone" id="content1">
 					<right-square v-for="item in redmiPhoneSquare" :key="item.id" :source="item" />
 				</view>
-				
+				<view class="no-data">
+					别拖了，已经光光了呢~~
+				</view>
 			</scroll-view>
 		</view>
 	</view>
@@ -89,4 +91,9 @@
 
 <style lang="scss">
 	@import '../../static/css/classify/classify.scss';
+	.no-data {
+		// border: 1px solid red;
+		text-align: center;
+		line-height: 100rpx;
+	}
 </style>

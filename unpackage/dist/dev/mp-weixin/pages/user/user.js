@@ -290,7 +290,6 @@ var _default =
   },
   computed: {
     isLogin: function isLogin() {
-      console.log(this.$store.state.isLogin);
       return this.$store.state.isLogin;
     } },
 
@@ -318,6 +317,11 @@ var _default =
         fail: function fail(err) {
           console.log(err);
         } });
+
+    },
+    pageToSetting: function pageToSetting() {
+      uni.navigateTo({
+        url: '../../pages/setting/setting' });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

@@ -56,4 +56,8 @@
 
   height: calc(100vh - 100rpx);
 }
+.no-data {
+  text-align: center;
+  line-height: 100rpx;
+}
 
